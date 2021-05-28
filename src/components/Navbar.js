@@ -3,7 +3,7 @@ import logo from "../assets/logo.gif"
 import { FaAlignRight } from "react-icons/fa"
 import PageLinks from "../constants/links"
 import { Link } from "gatsby"
-const Navbar = () => {
+const Navbar = ({toogleSidebar}) => {
   return <nav className="navbar " >
     <div className="nav-center">
     <div className="nav-header">
@@ -12,7 +12,7 @@ const Navbar = () => {
       <img src={logo} alt="logoPapriOficial"></img>
       
       </Link>
-      <button type="button" className="toggle-btn">
+      <button type="button" className="toggle-btn" onClick={toogleSidebar}>
         <FaAlignRight></FaAlignRight>
       </button>
     </div>

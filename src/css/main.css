@@ -85,6 +85,7 @@ h4 {
   line-height: 1.25;
   margin-bottom: 0.75rem;
   font-family: var(--ff-primary);
+ 
 }
 h1 {
   font-size: 3rem;
@@ -193,6 +194,7 @@ p {
   width: 15rem;
   display: flex;
   justify-content: space-between;
+ 
 }
 .social-link {
   font-size: 1.75rem;
@@ -505,8 +507,9 @@ Services
   transition: var(--transition);
 }
 .service-icon {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 1.5rem;
+
 }
 .service .underline {
   width: 3rem;
@@ -837,7 +840,7 @@ Footer
 */
 .footer {
   height: 9rem;
-  background: #222;
+  background: var(--clr-primary-5);
   text-align: center;
   display: grid;
   place-items: center;

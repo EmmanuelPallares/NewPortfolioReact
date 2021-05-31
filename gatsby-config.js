@@ -6,11 +6,11 @@
 
 module.exports = {
   siteMetadata: {
-    title: "WebDev Portfolio",
+    title: "Papri Portfolio",
     description: "This is WebDev Portfolio Site",
     author: "@Papri",
     twitterUsername: "@Emmanue00439761",
-    image: "",
+    image: '/retraitWeb.png',
     siteUrl: "https://emmanuelpallares.com",
   },
   plugins: [

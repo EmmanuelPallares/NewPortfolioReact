@@ -12,7 +12,7 @@ export default ({data}) => {
     allStrapiProjects:{nodes:projects},
   allStrapiBlogs:{nodes:blogs}} =data
   return <Layout>
-    <SEO title="Home" />
+     <SEO title="Home" description="this is our home page"/> 
     <Hero/>
     <Services/>
     <Jobs/>

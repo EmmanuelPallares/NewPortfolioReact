@@ -1,50 +1,46 @@
 import React from "react"
 import { IconContext } from "react-icons"
-import {
-  FaFacebookSquare,
-  FaLinkedin,
-  
-  FaGithub,
-  FaYoutube
-} from "react-icons/fa"
+import { FaLinkedin, FaGithub, FaMailBulk, FaDownload } from "react-icons/fa"
 
 const data = [
   {
     id: 1,
-    icon: <IconContext.Provider
-    value={{ color: "#3b5998", className: "social-icon"  }}
-  ><FaFacebookSquare />
-  </IconContext.Provider>,
-    url: "https://www.facebook.com/emmanuel.vitos/",
-  },
-  {
-    id: 2,
-    icon: <IconContext.Provider
-    value={{ color: "#FF0000", className: "social-icon"  }}
-  ><FaYoutube />
-  </IconContext.Provider>,
-    url: "https://www.youtube.com/channel/UCuIxz8hyMA91YWSmH4SJWhg",
-  }
-  ,
-  {
-    id: 3,
     icon: <FaGithub className="social-icon"></FaGithub>,
     url: "https://github.com/EmmanuelPallares",
   },
   {
-    id: 4,
-    icon: <IconContext.Provider
-    value={{ color: "#2867B2", className: "social-icon"  }}
-  ><FaLinkedin />
-  </IconContext.Provider>,
-    url: "https://www.twhttps://www.linkedin.com/in/emmanuel-pallares-38694a1b0/itter.com",
+    id: 2,
+    icon: (
+      <IconContext.Provider value={{ className: "social-icon" }}>
+        <FaLinkedin />
+      </IconContext.Provider>
+    ),
+    url: "https://www.linkedin.com/in/emmanuel-pallares-38694a1b0/",
   },
-  
-  
+  {
+    id: 3,
+    icon: (
+      <IconContext.Provider value={{ className: "social-icon" }}>
+        <FaMailBulk />
+      </IconContext.Provider>
+    ),
+    url: "mailto:emmanuelpallares50@gmail.com",
+  },
+  {
+    text: "CV",
+    id: 4,
+    icon: (
+      <IconContext.Provider value={{ className: "social-icon" }}>
+        <FaDownload />
+      </IconContext.Provider>
+    ),
+    url:
+      "https://drive.google.com/file/d/1yAg2wPs_ZVxUkStQEdXF0FTvhm7JKVsY/view?usp=sharing",
+  },
 ]
 const links = data.map(link => {
   return (
-    <li key={link.id}>
+    <li key={link.id.text}>
       <a href={link.url} className="social-link">
         {link.icon}
       </a>

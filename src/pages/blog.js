@@ -5,20 +5,22 @@ import Blogs from "../components/Blogs"
 // ...GatsbyImageSharpFluid
 
 const Blog = ({
-  data:{
-    allStrapiBlogs:{nodes:blogs},
+  data: {
+    allStrapiBlogs: { nodes: blogs },
   },
 }) => {
-  return <Layout >
-    <section className="blog-page">
-      <Blogs blogs={blogs} title="Blog" />
-    </section>
-  </Layout>
+  return (
+    <Layout>
+      <section className="blog-page">
+        <Blogs blogs={blogs} title="Blog" />
+      </section>
+    </Layout>
+  )
 }
 
 export const query = graphql`
   {
-    allStrapiBlogs {
+    allStrapiBlogs(sort: { fields: date, order: DESC }) {
       nodes {
         slug
         desc

@@ -10,7 +10,7 @@ module.exports = {
     description: "This is WebDev Portfolio Site",
     author: "@Papri",
     twitterUsername: "@Emmanue00439761",
-    image: '/retraitWeb.png',
+    image: "/retraitWeb.png",
     siteUrl: "https://emmanuelpallares.com",
   },
   plugins: [
@@ -30,27 +30,27 @@ module.exports = {
       options: {
         apiURL: `http://localhost:1337`,
         queryLimit: 1000, // Default to 100
-          //contentTypes : `jobs`, `projects`, `blogs`,
-           //singleType : `about`
+        //contentTypes : `jobs`, `projects`, `blogs`,
+        //singleType : `about`
         //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
-        contentTypes: [`jobs`,`projects`,`blogs`],
-        singleTypes:[`about`],
-     
+        contentTypes: [`jobs`, `projects`, `blogs`],
+        singleTypes: [`about`],
       },
     },
-     {
-       resolve: `gatsby-plugin-webfonts`,
-       options: {
-         fonts: {
-           google: [
-             {
-               family: "Roboto",
-               variants: ["400", "700"],
-             },
-             { family: "Open Sans" },
-           ],
-         },
-       },
-     },
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [{ family: "Open Sans", variants: ["400", "700"] }],
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "195644830",
+        head: true,
+      },
+    },
   ],
 }

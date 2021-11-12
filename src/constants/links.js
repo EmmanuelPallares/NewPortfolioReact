@@ -21,6 +21,7 @@ const data = [
     text: "blog",
     url: "/blog/",
   },
+
   {
     id: 5,
     text: "contact",

@@ -35,7 +35,7 @@ const data = [
       </IconContext.Provider>
     ),
     url:
-      "https://drive.google.com/file/d/1yAg2wPs_ZVxUkStQEdXF0FTvhm7JKVsY/view?usp=sharing",
+      "https://drive.google.com/file/d/1TZmQzzuQDHGNKZH4AtdswIf-O7i9bAv-/view?usp=sharing",
   },
 ]
 const links = data.map(link => {

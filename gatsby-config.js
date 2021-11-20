@@ -10,7 +10,7 @@ module.exports = {
     description: "This is WebDev Portfolio Site",
     author: "@Papri",
     twitterUsername: "@Emmanue00439761",
-    image: "/retraitWeb.png",
+    image: "https://i.imgur.com/uyq050h.png",
     siteUrl: "https://emmanuelpallares.com",
   },
   plugins: [
@@ -28,7 +28,7 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:1337`,
+        apiURL: `https://portfolio-admin-papri.herokuapp.com`,
         queryLimit: 1000, // Default to 100
         //contentTypes : `jobs`, `projects`, `blogs`,
         //singleType : `about`

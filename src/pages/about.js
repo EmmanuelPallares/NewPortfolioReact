@@ -34,7 +34,7 @@ const About = ({
             <Title title={title} />
             <p>{info}</p>
             <div className="underline"></div>
-            {/* Icons Stack */}
+            {/* Icons Stackkkk */}
             <IconContext.Provider
               value={{ color: "#DD4B25", className: "service-icon" }}
             >

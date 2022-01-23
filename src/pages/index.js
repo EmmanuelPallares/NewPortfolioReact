@@ -38,9 +38,11 @@ export const query = graphql`
         title
         url
         image {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
+          localFile {
+            childImageSharp {
+              fluid {
+                originalImg
+              }
             }
           }
         }
@@ -60,9 +62,11 @@ export const query = graphql`
         title
         category
         image {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
+          localFile {
+            childImageSharp {
+              fluid {
+                originalImg
+              }
             }
           }
         }

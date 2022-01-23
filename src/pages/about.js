@@ -133,9 +133,11 @@ export const query = graphql`
         title
         info
         image {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
+          localFile {
+            childImageSharp {
+              fluid {
+                originalImg
+              }
             }
           }
         }

@@ -29,7 +29,10 @@ const About = ({
       <SEO title="About" description="about me description" />
       <section className="about-page">
         <div className="section-center about-center">
-          <Image fluid={image.childImageSharp.fluid} className="about-img" />
+          <Image
+            fluid={image.localFile.childImageSharp.fluid}
+            className="about-img"
+          />
           <article className="about-text">
             <Title title={title} />
             <p>{info}</p>
@@ -135,8 +138,9 @@ export const query = graphql`
         image {
           localFile {
             childImageSharp {
+              gatsbyImageData
               fluid {
-                originalImg
+                ...GatsbyImageSharpFluid
               }
             }
           }

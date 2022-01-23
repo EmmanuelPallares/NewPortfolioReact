@@ -6,7 +6,10 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
   return (
     <article className="project">
       {image && (
-        <Image fluid={image.childImageSharp.fluid} className="project-img" />
+        <Image
+          fluid={image.localFile.childImageSharp.fluid}
+          className="project-img"
+        />
       )}
 
       <div className="project-info">

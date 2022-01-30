@@ -35,6 +35,9 @@
     "react-syntax-highlighter": "^15.4.3",
     "remark-mdx": "^2.0.0-rc.2"
   },
+  "resolutions": {
+    "remark-mdx": "1.6.22"
+},
   "devDependencies": {
     "prettier": "2.0.5"
   },

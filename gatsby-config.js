@@ -6,11 +6,12 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Papri Portfolio",
+    title: "WebDev Portfolio",
     description: "This is WebDev Portfolio Site",
     author: "@Papri",
-  
-  
+    twitterUsername: "@Emmanue00439761",
+    image: "",
+    siteUrl: "http://vitoz.dev",
   },
   plugins: [
     `gatsby-transformer-sharp`,
@@ -45,4 +46,4 @@ module.exports = {
       },
     },
   ],
-}
+};

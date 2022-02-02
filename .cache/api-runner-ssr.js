@@ -3,7 +3,7 @@ var plugins = [{
       options: {"plugins":[]},
     },{
       plugin: require('C:/Users/iguan/Documents/NewPortfolioReact-master/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
-      options: {"plugins":[],"output":"/sitemap.xml","createLinkInHead":true},
+      options: {"plugins":[]},
     },{
       plugin: require('C:/Users/iguan/Documents/NewPortfolioReact-master/node_modules/gatsby-plugin-webfonts/gatsby-ssr'),
       options: {"plugins":[],"fonts":{"google":[{"family":"Open Sans","variants":["400","700"]}]}},

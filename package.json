@@ -7,7 +7,6 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
@@ -27,25 +26,28 @@
     "gatsby-source-filesystem": "^2.3.0",
     "gatsby-source-strapi": "^1.0.2",
     "gatsby-transformer-sharp": "^2.5.0",
-    "react": "^16.12.0",
+    "react": "^16.14.0",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "react-icons": "^3.10.0",
     "react-markdown": "^4.3.1",
-    "react-syntax-highlighter": "^15.4.3",
-    "remark-mdx": "^2.0.0-rc.2"
+    "react-syntax-highlighter": "^15.4.3"
   },
   "resolutions": {
     "remark-mdx": "1.6.22"
-},
+  },
   "devDependencies": {
     "prettier": "2.0.5"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "git+https://github.com/gatsbyjs/gatsby-starter-hello-world.git"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+  },
+  "homepage": "https://github.com/gatsbyjs/gatsby-starter-hello-world#readme",
+  "main": "gatsby-browser.js",
+  "keywords": [],
+  "author": ""
 }

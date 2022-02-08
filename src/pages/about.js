@@ -1,10 +1,11 @@
-import React from "react"
-import Layout from "../components/Layout"
-import { graphql } from "gatsby"
-import Title from "../components/Title"
-import Image from "gatsby-image"
-import SEO from "../components/SEO"
-import { IconContext } from "react-icons"
+import React from "react";
+import Layout from "../components/Layout";
+import { graphql } from "gatsby";
+import Title from "../components/Title";
+//Comented below image support
+// import Image from "gatsby-image";
+import SEO from "../components/SEO";
+import { IconContext } from "react-icons";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -14,25 +15,26 @@ import {
   FaAngular,
   FaPhp,
   FaBootstrap,
-} from "react-icons/fa"
-import { IoLogoJavascript } from "react-icons/io"
-import { DiMongodb, DiMysql, DiNpm, DiGit } from "react-icons/di"
+} from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
+import { DiMongodb, DiMysql, DiNpm, DiGit } from "react-icons/di";
 
 const About = ({
   data: {
     about: { nodes },
   },
 }) => {
-  const { info, title, image } = nodes[0]
+  //In the props below i quit the node {image}
+  const { info, title } = nodes[0];
   return (
     <Layout>
       <SEO title="About" description="about me description" />
       <section className="about-page">
-        <div className="section-center about-center">
-          <Image
+        <div className="section-center">
+          {/* <Image
             fluid={image.localFile.childImageSharp.fluid}
             className="about-img"
-          />
+          /> */}
           <article className="about-text">
             <Title title={title} />
             <p>{info}</p>
@@ -122,8 +124,8 @@ const About = ({
         </div>
       </section>
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   {
@@ -148,5 +150,5 @@ export const query = graphql`
       }
     }
   }
-`
-export default About
+`;
+export default About;

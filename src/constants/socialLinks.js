@@ -1,6 +1,6 @@
-import React from "react"
-import { IconContext } from "react-icons"
-import { FaLinkedin, FaGithub, FaMailBulk, FaDownload } from "react-icons/fa"
+import React from "react";
+import { IconContext } from "react-icons";
+import { FaLinkedin, FaGithub, FaMailBulk, FaDownload } from "react-icons/fa";
 
 const data = [
   {
@@ -27,7 +27,7 @@ const data = [
     url: "mailto:emmanuelpallares50@gmail.com",
   },
   {
-    text: "CV",
+    text: "Resume",
     id: 4,
     icon: (
       <IconContext.Provider value={{ className: "social-icon" }}>
@@ -35,21 +35,21 @@ const data = [
       </IconContext.Provider>
     ),
     url:
-      "https://drive.google.com/file/d/1TZmQzzuQDHGNKZH4AtdswIf-O7i9bAv-/view?usp=sharing",
+      "https://drive.google.com/file/d/1UbD7OjAPsUFSw-XZOG2SjXtSWsqwsnHc/view?usp=sharing",
   },
-]
-const links = data.map(link => {
+];
+const links = data.map((link) => {
   return (
     <li key={link.id.text}>
       <a href={link.url} className="social-link">
         {link.icon}
       </a>
     </li>
-  )
-})
+  );
+});
 
 export default ({ styleClass }) => {
   return (
     <ul className={`social-links ${styleClass ? styleClass : ""}`}>{links}</ul>
-  )
-}
+  );
+};

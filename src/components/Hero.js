@@ -1,8 +1,9 @@
-import React from "react"
-import Image from "gatsby-image"
-import { Link } from "gatsby"
-import { graphql, useStaticQuery } from "gatsby"
-import SocialLinks from "../constants/socialLinks"
+import React from "react";
+import Image from "gatsby-image";
+import { Link } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
+import SocialLinks from "../constants/socialLinks";
+import Typewriter from "typewriter-effect";
 // ...GatsbyImageSharpFluid
 const query = graphql`
   {
@@ -14,13 +15,13 @@ const query = graphql`
       }
     }
   }
-`
+`;
 const Hero = () => {
   const {
     file: {
       childImageSharp: { fluid },
     },
-  } = useStaticQuery(query)
+  } = useStaticQuery(query);
 
   return (
     <header className="hero">
@@ -28,7 +29,27 @@ const Hero = () => {
         <article className="hero-info">
           <div>
             <div className="underline"></div>
-            <h1>I'm Emmanuel</h1>
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString("<h1>I'm Emmanuel</h1>")
+
+                  .pauseFor(1600)
+                  .deleteAll()
+                  .callFunction(() => {
+                    console.log("All strings were deleted");
+                  })
+
+                  .typeString("<h1> <span>I'm</span> vitoz.net</h1>")
+
+                  .pauseFor(4000)
+
+                  .callFunction(() => {
+                    console.log("All strings were deleted");
+                  })
+                  .start();
+              }}
+            />
             <h4>Front-End Developer</h4>
             <Link to="/contact" className="btn">
               Contact me
@@ -39,7 +60,7 @@ const Hero = () => {
         <Image fluid={fluid} className="hero-img" />
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

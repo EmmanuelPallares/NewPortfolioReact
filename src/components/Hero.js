@@ -3,7 +3,8 @@ import Image from "gatsby-image";
 import { Link } from "gatsby";
 import { graphql, useStaticQuery } from "gatsby";
 import SocialLinks from "../constants/socialLinks";
-import Typewriter from "typewriter-effect";
+import TypewriterHero from "./Typerwriter";
+
 // ...GatsbyImageSharpFluid
 const query = graphql`
   {
@@ -29,30 +30,10 @@ const Hero = () => {
         <article className="hero-info">
           <div>
             <div className="underline"></div>
-            <Typewriter
-              onInit={(typewriter) => {
-                typewriter
-                  .typeString("<h1>I'm Emmanuel</h1>")
+            <TypewriterHero />
 
-                  .pauseFor(1600)
-                  .deleteAll()
-                  .callFunction(() => {
-                    console.log("All strings were deleted");
-                  })
-
-                  .typeString("<h1> <span>I'm</span> vitoz.net</h1>")
-
-                  .pauseFor(4000)
-
-                  .callFunction(() => {
-                    console.log("All strings were deleted");
-                  })
-                  .start();
-              }}
-            />
-            <h4>Front-End Developer</h4>
-            <Link to="/contact" className="btn">
-              Contact me
+            <Link to="/about" className="btn">
+              About me
             </Link>
             <SocialLinks></SocialLinks>
           </div>

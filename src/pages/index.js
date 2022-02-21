@@ -6,11 +6,8 @@ import Services from "../components/Services";
 import Jobs from "../components/Jobs";
 import Projects from "../components/Projects";
 import Blogs from "../components/Blogs";
-import AcordionTailwind from "../components/AcordionTailwind";
 import SEO from "../components/SEO";
-import { Helmet } from "react-helmet";
 import "flowbite";
-
 export default ({ data }) => {
   const {
     allStrapiProjects: { nodes: projects },
@@ -18,18 +15,12 @@ export default ({ data }) => {
   } = data;
   return (
     <Layout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>lolllllllllllllllllll</title>
-        <link rel="canonical" href="http://mysite.com/example" />
-      </Helmet>
       <SEO title="Home" description="this is our home page" />
       <Hero />
       <Services />
       <Jobs />
       <Projects projects={projects} title="Featured Projects" showLink />
       <Blogs blogs={blogs} title="Blog" showLink />
-      <AcordionTailwind />
     </Layout>
   );
 };

@@ -2,9 +2,11 @@ import React from "react";
 import Layout from "../components/Layout";
 import { graphql } from "gatsby";
 import Title from "../components/Title";
+
 //Comented below image support
 // import Image from "gatsby-image";
 import SEO from "../components/SEO";
+import "flowbite";
 
 const About = ({
   data: {
@@ -24,9 +26,6 @@ const About = ({
           /> */}
           <article className="about-text">
             <Title title={title} />
-            <p>{info}</p>
-            <div className="underline"></div>
-
             <div id="accordion-open" data-accordion="collapse">
               <h2 id="accordion-open-heading-1">
                 <button
@@ -49,7 +48,7 @@ const About = ({
                         clip-rule="evenodd"
                       ></path>
                     </svg>
-                    {title}
+                    Long Description
                   </span>
                   <svg
                     data-accordion-icon=""
@@ -75,17 +74,6 @@ const About = ({
                   <p className="mb-2 text-gray-500 dark:text-gray-400">
                     {info}
                   </p>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    Check out this guide to learn how to{" "}
-                    <a
-                      href="https://flowbite.com/docs/getting-started/introduction/"
-                      className="text-blue-600 dark:text-blue-500 hover:underline"
-                    >
-                      get started
-                    </a>{" "}
-                    and start developing websites even faster with components on
-                    top of Tailwind CSS.
-                  </p>
                 </div>
               </div>
               <h2 id="accordion-open-heading-2">
@@ -109,7 +97,7 @@ const About = ({
                         clip-rule="evenodd"
                       ></path>
                     </svg>
-                    Is there a Figma file available?
+                    About 2022
                   </span>
                   <svg
                     data-accordion-icon=""
@@ -144,7 +132,7 @@ const About = ({
                       className="text-blue-600 dark:text-blue-500 hover:underline"
                     >
                       Figma design system
-                    </a>{" "}
+                    </a>
                     based on the utility classes from Tailwind CSS and
                     components from Flowbite.
                   </p>
@@ -170,8 +158,8 @@ const About = ({
                         d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
                         clip-rule="evenodd"
                       ></path>
-                    </svg>{" "}
-                    What are the differences between Flowbite and Tailwind UI?
+                    </svg>
+                    Coding Blog 2022
                   </span>
                   <svg
                     data-accordion-icon=""

@@ -1,5 +1,5 @@
 import React from "react";
-
+import "flowbite";
 const AcordionTailwind = () => {
   return (
     <div id="accordion-collapse" data-accordion="collapse">

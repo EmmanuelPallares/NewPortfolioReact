@@ -11,13 +11,15 @@ module.exports = {
     author: "@Papri",
     twitterUsername: "@Emmanue00439761",
     image: "",
-    siteUrl: "http://vitoz.dev",
+    siteUrl: "https://vitoz.dev",
   },
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
+    "gatsby-plugin-postcss",
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {

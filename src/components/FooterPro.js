@@ -1,23 +1,22 @@
 import React from "react";
 import "flowbite";
+import { Link } from "gatsby";
+import logo from "../assets/main.vitoz.logo.png";
+
 const FooterPro = () => {
   return (
     <div className="max-w-2xl mx-auto">
       <footer className="p-4 bg-white sm:p-6 dark:bg-gray-800">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a
-              href="https://flowbite.com"
+            <Link
+              to="https://vitoz.dev"
               target="_blank"
               className="flex items-center"
             >
-              <img
-                src="https://flowbite.com/docs/images/logo.svg"
-                className="mr-4 h-10"
-                alt="FlowBite Logo"
-              />
+              <img src={logo} className="mr-4 h-10" alt="FlowBite Logo" />
               <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white"></span>
-            </a>
+            </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
@@ -26,73 +25,111 @@ const FooterPro = () => {
               </h3>
               <ul>
                 <li className="mb-4">
-                  <a
-                    href="https://flowbite.com"
+                  <Link
+                    to="https://www.gatsbyjs.com/"
                     target="_blank"
                     className="text-gray-600 hover:underline dark:text-gray-400"
                   >
-                    Flowbite
-                  </a>
+                    Gatsby
+                  </Link>
                 </li>
-                <li>
-                  <a
-                    href="https://tailwindcss.com/"
+                <li className="mb-4">
+                  <Link
+                    to="https://graphql.org/"
                     target="_blank"
                     rel="nofollow"
                     className="text-gray-600 hover:underline dark:text-gray-400"
                   >
-                    Tailwind CSS
-                  </a>
+                    Graphql
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link
+                    to="https://strapi.io/"
+                    target="_blank"
+                    rel="nofollow"
+                    className="text-gray-600 hover:underline dark:text-gray-400"
+                  >
+                    Strapi
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link
+                    to="https://tailwindcss.com/"
+                    target="_blank"
+                    rel="nofollow"
+                    className="text-gray-600 hover:underline dark:text-gray-400"
+                  >
+                    Tailwind
+                  </Link>
                 </li>
               </ul>
             </div>
             <div>
               <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                Follow us
+                Follow me
               </h3>
               <ul>
                 <li className="mb-4">
-                  <a
-                    href="https://github.com/themesberg/flowbite"
+                  <Link
+                    to="https://github.com/EmmanuelPallares"
                     target="_blank"
                     className="text-gray-600 hover:underline dark:text-gray-400"
                   >
                     Github
-                  </a>
+                  </Link>
                 </li>
-                <li>
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
+                <li className="mb-4">
+                  <Link
+                    to="https://www.linkedin.com/in/emmanuel-pallares-38694a1b0/"
                     target="_blank"
                     className="text-gray-600 hover:underline dark:text-gray-400"
                   >
-                    Discord
-                  </a>
+                    LinkedIn
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link
+                    to="https://www.facebook.com/emmanuel.vitos"
+                    target="_blank"
+                    className="text-gray-600 hover:underline dark:text-gray-400"
+                  >
+                    Facebook
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link
+                    to="https://www.youtube.com/channel/UCuIxz8hyMA91YWSmH4SJWhg"
+                    target="_blank"
+                    className="text-gray-600 hover:underline dark:text-gray-400"
+                  >
+                    Youtube
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link
+                    to="https://twitter.com/EPallaresDev"
+                    target="_blank"
+                    className="text-gray-600 hover:underline dark:text-gray-400"
+                  >
+                    Twitter
+                  </Link>
                 </li>
               </ul>
             </div>
             <div>
               <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                Legal
+                Latest Blog
               </h3>
               <ul>
                 <li className="mb-4">
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     target="_blank"
                     className="text-gray-600 hover:underline dark:text-gray-400"
                   >
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    target="_blank"
-                    className="text-gray-600 hover:underline dark:text-gray-400"
-                  >
-                    Terms &amp; Conditions
-                  </a>
+                    Visual Studio Snnipets
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -101,19 +138,19 @@ const FooterPro = () => {
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © 2022{" "}
-            <a
-              href="https://flowbite.com"
+            © 2022
+            <Link
+              to="https://vitoz.dev"
               target="_blank"
               className="hover:underline"
             >
-              Flowbite™
-            </a>
+              vitoz.dev
+            </Link>
             . All Rights Reserved.
           </span>
-          <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-            <a
-              href="#"
+          {/* <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+            <Link
+              to="#"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -128,9 +165,9 @@ const FooterPro = () => {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="#"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -145,9 +182,9 @@ const FooterPro = () => {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="#"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -158,9 +195,9 @@ const FooterPro = () => {
               >
                 <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
               </svg>
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="#"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -175,9 +212,9 @@ const FooterPro = () => {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="#"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -192,23 +229,10 @@ const FooterPro = () => {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-            </a>
-          </div>
+            </Link>
+          </div> */}
         </div>
       </footer>
-
-      <p className="mt-5">
-        This footer component is part of a larger, open-source library of
-        Tailwind CSS components. Learn more by going to the official{" "}
-        <a
-          className="text-blue-600 hover:underline"
-          href="https://flowbite.com/docs/getting-started/introduction/"
-          target="_blank"
-        >
-          Flowbite Documentation
-        </a>
-        .
-      </p>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
+import HeroPro from "../components/HeroPro";
 import Services from "../components/Services";
 import Jobs from "../components/Jobs";
 import Projects from "../components/Projects";
@@ -17,6 +18,7 @@ export default ({ data }) => {
     <Layout>
       <SEO title="Home" description="this is our home page" />
       <Hero />
+      <HeroPro />
       <Services />
       <Jobs />
       <Projects projects={projects} title="Featured Projects" showLink />

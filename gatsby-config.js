@@ -43,7 +43,9 @@ module.exports = {
       resolve: `gatsby-plugin-webfonts`,
       options: {
         fonts: {
-          google: [{ family: "Open Sans", variants: ["400", "700"] }],
+          google: [
+            { family: "Source Sans Pro", variants: ["400", "700", "900"] },
+          ],
         },
       },
     },

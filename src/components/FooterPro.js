@@ -35,12 +35,16 @@ const FooterPro = () => {
                 </li>
                 <li className="mb-4">
                   <Link
-                    to="https://graphql.org/"
+                    to="https://graphcms.com/"
                     target="_blank"
                     rel="nofollow"
                     className="text-gray-600 hover:underline dark:text-gray-400"
                   >
-                    Graphql
+                    GraphCMS
+                    <svg
+                      class="animate-spin h-5 w-5 mr-3 ..."
+                      viewBox="0 0 24 24"
+                    ></svg>
                   </Link>
                 </li>
                 <li className="mb-4">
@@ -88,15 +92,7 @@ const FooterPro = () => {
                     LinkedIn
                   </Link>
                 </li>
-                <li className="mb-4">
-                  <Link
-                    to="https://www.facebook.com/emmanuel.vitos"
-                    target="_blank"
-                    className="text-gray-600 hover:underline dark:text-gray-400"
-                  >
-                    Facebook
-                  </Link>
-                </li>
+
                 <li className="mb-4">
                   <Link
                     to="https://www.youtube.com/channel/UCuIxz8hyMA91YWSmH4SJWhg"
@@ -124,7 +120,7 @@ const FooterPro = () => {
               <ul>
                 <li className="mb-4">
                   <Link
-                    to="#"
+                    to="/blogs/snippets-in-visual-studio-code"
                     target="_blank"
                     className="text-gray-600 hover:underline dark:text-gray-400"
                   >
